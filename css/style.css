@@ -1,0 +1,93 @@
+/*
+QSCconference.com
+
+Author: Alex McKinnon - https://mckinnon.io
+
+License: https://qsconference.com/license.html
+
+*/
+
+/* -------- General -------- */
+
+
+/* -------- Landing -------- */
+
+/*
+Must Adds:
+Web particles
+
+Headers h1
+paragraph
+
+get started button
+get started button hover
+*/
+
+#landing {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/spacebg.jpg) top center;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+@media (min-width: 1024px) {
+	#landing {
+		background-attachment:fixed;
+	}
+}
+
+#landing:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#landing .landing-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#landing h1 {
+	color: #fff;
+	font-size: 45px;
+}
+
+
+
+/* -------- Footer -------- */
+
+#footer {
+	background: #101522;
+	padding: 0 0 25px 0;
+	color: #eee;
+	font-size: 14px;
+}
+
+#footer .archive {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#footer .copyright {
+  	text-align: center;
+}
+
+#footer .credits {
+  	text-align: center;
+  	font-size: 13px;
+  	color: #ddd;
+}
