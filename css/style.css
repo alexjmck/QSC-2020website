@@ -54,7 +54,7 @@ get started button hover
 
 #landing:before {
   content: "";
-  background: rgba(3, 6, 17, 0.4);
+  background: rgba(3, 6, 17, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -76,10 +76,10 @@ get started button hover
 }
 
 #landing h1 {
-	position: absolute;
 	z-index: 1;
 	color: #fff;
-	font-size: 45px;
+	font-size: 35px;
+  text-align: center;
 }
 
 

@@ -39,12 +39,21 @@ License at https://qsconference.com/license.html
 
     <!-- Landing Section - landing page -->
     <section id="landing">
-
-      <div id="particles-js" class="landing-container fadeIn">
-        <p>
-          <!--<img src="img/qsc_logo_tc.png" alt="QSC logo">-->
+      <!-- Floating stuff -->
+      <div class="row justify-content-md-center">
+        <div class="col-md-3 d-flex align-items-center">
+          <img src="img/qsc_logo_tc.png" class="max-width" alt="QSC logo">      
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-3 d-flex align-items-center" style="text-align: center;">
           <h1>Queen's Space Conference 2020</h1>
-        </p>
+        </div>
+      </div>
+      <!-- particles.js stuff -->
+      
+      <div id="particles-js" class="landing-container fadeIn">
+        <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
       </div>
       <!-- particles.js scripts -->
         <script src="lib/particles/particles.js"></script>
