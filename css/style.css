@@ -76,6 +76,7 @@ get started button hover
 }
 
 #landing h1 {
+  position: absolute;
 	z-index: 1;
 	color: #fff;
 	font-size: 35px;
