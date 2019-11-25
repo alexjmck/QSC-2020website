@@ -75,8 +75,14 @@ get started button hover
   text-align: center;
 }
 
+#landing .landing-items {
+}
+
+#landing .landing-items img {
+  width: 30%;
+}
+
 #landing h1 {
-  position: absolute;
 	z-index: 1;
 	color: #fff;
 	font-size: 35px;
