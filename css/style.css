@@ -80,15 +80,31 @@ get started button hover
 
 #landing .landing-items img {
   width: 30%;
+  display: block; 
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #landing .landing-items img {
+    width: 50%;
+  }
 }
 
 #landing h1 {
 	z-index: 1;
 	color: #fff;
-	font-size: 35px;
+	font-size: 65px;
   text-align: center;
   font-family: 'Megrim', cursive;
+  padding: 10px 10px 10px 10px
 }
+
+@media (max-width: 768px) {
+  #landing h1 {
+    font-size: 40px;
+  }
+}
+
 
 /* -------- About -------- */
 
@@ -97,7 +113,18 @@ get started button hover
   background-size: cover;
   overflow: hidden;
   position: relative;
+  color: #fff;
   padding: 30px 0 20px 0;
+}
+
+#about:before {
+  content: "";
+  background: rgba(1,1,1,0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 #about h1 {
