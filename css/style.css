@@ -87,8 +87,25 @@ get started button hover
 	color: #fff;
 	font-size: 35px;
   text-align: center;
+  font-family: 'Megrim', cursive;
 }
 
+/* -------- About -------- */
+
+#about {
+  background: url("../img/iss038e015406~orig.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0 20px 0;
+}
+
+#about h1 {
+  z-index: 1;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Oxygen', sans-serif;
+}
 
 /* -------- Footer -------- */
 
