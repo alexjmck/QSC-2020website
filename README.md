@@ -1,6 +1,6 @@
 # QSC-2020website
 QSC 2020 Website
 
-A clone from the 2020 website built by Cory Crowley.
+This project is being built from the ground up using a handful of resources outlined in the license.html file. 
 
-I'll be adding a handful of new features and re-padding things.
+The space gam authored by Cory Crowley will be added in future commits.
