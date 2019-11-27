@@ -76,12 +76,26 @@ get started button hover
 }
 
 #landing .landing-items {
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  
 }
 
 #landing .landing-items img {
   width: 30%;
   display: block; 
   margin: 0 auto;
+
+
 }
 
 @media (max-width: 768px) {
@@ -132,6 +146,19 @@ get started button hover
   color: #fff;
   font-size: 35px;
   font-family: 'Oxygen', sans-serif;
+}
+
+#about h2 {
+  z-index: 1;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* -------- Map -------- */
+
+#maps {
+  height: 300px;
 }
 
 /* -------- Footer -------- */
