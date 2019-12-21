@@ -6,7 +6,7 @@ Author: Alex McKinnon - https://mckinnon.io
 License: https://qsconference.com/license.html
 
 */
-
+/*https://coolors.co/ba1200-9dd1f1-508aa8-26081c-c8e0f4*/
 /* -------- General -------- */
 
 /* -------- Particles.js -------- */
@@ -90,6 +90,10 @@ get started button hover
   
 }
 
+#landing .landing-items btn-get-started {
+  position: absolute;
+}
+
 #landing .landing-items img {
   width: 30%;
   display: block; 
@@ -160,6 +164,35 @@ get started button hover
 #maps {
   height: 300px;
 }
+
+/* -------- Tickets -------- */
+
+#tickets {
+  padding: 60px 0;
+  background-color: rgb(38,8,28);
+  padding: 25px 0 25px 0;
+
+}
+
+/*#tickets:before {
+  content: "";
+  background: rgba(1,1,1,0.8);
+}*/
+
+#tickets .card {
+  border: none;
+  border: 6px;
+  box-shadow: 0 10px 35px 0 #000;
+  height: 300px;
+}
+
+#tickets .ticket-title {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  color: #fff;
+}
+
+#tickets .price
 
 /* -------- Footer -------- */
 
