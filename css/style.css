@@ -90,8 +90,19 @@ get started button hover
   
 }
 
-#landing .landing-items btn-get-started {
-  position: absolute;
+#landing btn-get-started {
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 #landing .landing-items img {
@@ -168,22 +179,40 @@ get started button hover
 /* -------- Tickets -------- */
 
 #tickets {
+  background: url("../img/gameBG.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
   padding: 60px 0;
   background-color: rgb(38,8,28);
   padding: 25px 0 25px 0;
 
 }
 
-/*#tickets:before {
+#tickets h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #fff;
+}
+
+#tickets:before {
   content: "";
   background: rgba(1,1,1,0.8);
-}*/
+}
 
 #tickets .card {
+  background-color: #101522;
   border: none;
   border: 6px;
   box-shadow: 0 10px 35px 0 #000;
   height: 300px;
+}
+
+#tickets .card hr {
+  margin: 25% 0;
+  color: #fff;
 }
 
 #tickets .ticket-title {
@@ -192,7 +221,10 @@ get started button hover
   color: #fff;
 }
 
-#tickets .price
+#tickets .ticket-price {
+  font-size: 48px;
+  color: #fff;
+}
 
 /* -------- Footer -------- */
 
