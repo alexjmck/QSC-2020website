@@ -75,6 +75,27 @@ get started button hover
   text-align: center;
 }
 
+#landing p .social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#landing p .social a {
+  margin: 0 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  vertical-align: bottom;
+}
+
 #landing .landing-items {
 
   position: absolute;
@@ -87,7 +108,22 @@ get started button hover
   align-items: center;
   flex-direction: column;
   text-align: center;
-  
+}
+
+#landing .arrow {
+  color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 #landing btn-get-started {
@@ -185,8 +221,17 @@ get started button hover
   position: relative;
   padding: 60px 0;
   background-color: rgb(38,8,28);
-  padding: 25px 0 25px 0;
+  text-align: center;
+}
 
+#tickets:before {
+  content: "";
+  background: rgba(1,1,1,0.1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 #tickets h6 {
@@ -197,22 +242,22 @@ get started button hover
   color: #fff;
 }
 
-#tickets:before {
-  content: "";
-  background: rgba(1,1,1,0.8);
-}
-
 #tickets .card {
   background-color: #101522;
   border: none;
   border: 6px;
   box-shadow: 0 10px 35px 0 #000;
-  height: 300px;
+  /*height: 400px;*/
+  text-align: left;
+  margin: 25px 25px 25px 25px;
 }
 
 #tickets .card hr {
-  margin: 25% 0;
+  margin: 25px 0;
   color: #fff;
+  height: 1px;
+  background-color: #fff;
+  border: none;
 }
 
 #tickets .ticket-title {
@@ -224,6 +269,16 @@ get started button hover
 #tickets .ticket-price {
   font-size: 48px;
   color: #fff;
+}
+
+#tickets .tickets-features {
+  color: #fff;
+  text-align: left;
+
+}
+
+#tickets .tickets-buy {
+  margin: 50px 0 0 0;
 }
 
 /* -------- Footer -------- */
