@@ -18,7 +18,8 @@ License at https://qsconference.com/license.html
     <link href="https://fonts.googleapis.com/css?family=Megrim|Oxygen|Quicksand|Raleway+Dots|Raleway&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome 4.7.0 -->
-    <script src="https://use.fontawesome.com/8af0faf7a2.js"></script>
+    <!-- <script src="https://use.fontawesome.com/8af0faf7a2.js"></script> -->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -39,6 +40,9 @@ License at https://qsconference.com/license.html
 
   </head>
   <body>
+    <!------ Header - Menu ------>
+
+    <!-- come back to this maybe with an opensource menu -->
 
     <!------ Landing Section - landing page ------>
     <section id="landing">
@@ -68,32 +72,42 @@ License at https://qsconference.com/license.html
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <h1>About QSC 2020</h1>
+          <div class="col">
+            <h1 class="title">About QSC 2020</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>What is QSC?</h2>
             <p> The conference is centered around a series of exciting talks, innovative workshops, and networking opportunities. We strive to bring together industry professionals in order to provide delegates the most informative, inspiring, and memorable conference possible. QSC is about sparking thought and idea-generation, raising awareness of the space industry, and piquing the interest in space for the future generation.</p>
+            
+          </div>
+          <div class="col-md-6">
             <h2>Tour the Universe: Not just a view!</h2>
             <p>What milestones have already been achieved in developing an understanding of space and in exploring the great unknown? Where will the future of space take us, and what's in store for the next generation of the Canadian space industry? Join us at QSC 2020 for a New World of astonishing answers! This year, QSC will take place January 31st - February 2nd at the Four Points by Sheraton Hotel. This promises to be a stellar experience, and the best space conference yet!</p>
-          </div>
-          <div class="col-md-5">
-            <h1>Where</h1>
-            <p>Four Points By Sheraton,<br>
-            285 King St E, <br>
-            Kingston Ontario</p>
-            <h1>& When</h1>
-            <p>January 31st - February 2nd</p>
-            <p>See the schedule -></p>
           </div>
         </div>
       </div>
     </section>
 
+    <!------ Sponsors ------> 
+    <section id="sponsors">
+      <div class="container-fluid">
+        <h1>Sponsors</h1>
+      </div>
+    </section>
+
     <!------ Maps ------>
 
-    <section id="maps">
+    <!-- Maybe keep but it might be better to use the wfive section to put it all in one place -->
+
+    <!-- <section id="maps"> -->
       <!-- REPLACE THE API KEY AND FIX INTERACTIVITY - happens when the map is at a stupid aspect ratio... -->
-      <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
+      <!-- <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe> -->
     
-    </section>
+    <!-- </section> -->
+
+
 
     <!------ Tickets ------>
     <section id="tickets">
@@ -194,9 +208,37 @@ License at https://qsconference.com/license.html
             </div>
           </div>
         </div>
-        <button type="button" class="btn tickets-buy btn-light btn-lg">Apply NOW! -></button>
+        <!-- <button type="button" class="btn tickets-buy btn-light btn-lg">Apply NOW! -></button> -->
+        <!-- Closed applications :( -->
       </div>
     </section>
+
+    <!-- Where and when -->
+
+    <section id="wfive">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="map">
+              <!-- REPLACE THE API KEY AND FIX INTERACTIVITY - happens when the map is at a stupid aspect ratio... -->
+              <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 text">
+            <h1>Where</h1>
+            <p>Four Points By Sheraton,<br>
+            285 King St E, <br>
+            Kingston Ontario</p>
+            <h1>& When</h1>
+            <p>January 31st - February 2nd</p>
+            <p>See the schedule -></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!------ Footer ------>
     <footer id="footer">
@@ -227,4 +269,7 @@ License at https://qsconference.com/license.html
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
   </body>
+  <!--
+   🌎 🚀 Lift off. See you at QSC. 🌌
+   -->
 </html>
