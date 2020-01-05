@@ -222,13 +222,13 @@ get started button hover
 /* -------- Sponsors -------- */
 
 #sponsors {
-  background-color: #9dd1f1;
-  color: #fff;
-
+  background-color: #508aa8;
 }
 
 #sponsors .title {
   text-align: center;
+  color: #fff;
+  margin: 20px 0;
 }
 
 /* -------- Map -------- */
