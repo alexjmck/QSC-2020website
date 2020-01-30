@@ -172,9 +172,61 @@ get started button hover
   padding: 10px 10px 10px 10px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   #landing h1 {
-    font-size: 40px;
+    font-size: 50px;
+  }
+}
+
+/* need to do more countdown importing from the old site */
+
+#landing .countdown {
+  position: relative;
+  bottom : 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+}
+
+#landing .countdown-iframe {
+
+}
+
+@media (max-width: 575px) {
+  #landing .countdown-iframe {
+    display:none;
+  }
+}
+
+#landing .countdown-iframe-small {
+
+}
+
+#landing .dates {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  bottom: 45px;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+#landing .dates h2 {
+  font-size: 40px;
+}
+#landing .dates h3 {
+  font-size: 25;
+}
+@media (max-width:575px) {
+  #landing .dates h2 {
+    font-size:30px;
+  }
+
+  #landing .dates h3 {
+    font-size: 25px;
   }
 }
 
@@ -222,13 +274,28 @@ get started button hover
 /* -------- Sponsors -------- */
 
 #sponsors {
-  background-color: #508aa8;
+  background-color: #101522;
+  padding: 40px 0 40px 0;
 }
 
 #sponsors .title {
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
   color: #fff;
-  margin: 20px 0;
+}
+#sponsors .images-inter {
+  padding: 40px 50px 40px 50px;
+  text-align: center;
+}
+
+#sponsors .images-extrat {
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+#sponsors .images-planet {
+  padding: 20px 30px 20px 30px;
+  text-align: center;
 }
 
 /* -------- Map -------- */

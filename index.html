@@ -15,11 +15,11 @@ License at https://qsconference.com/license.html
 
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Megrim|Oxygen|Quicksand|Raleway+Dots|Raleway&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Oxygen|Quicksand:300,400|Raleway+Dots|Raleway&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome 4.7.0 -->
-    <!-- <script src="https://use.fontawesome.com/8af0faf7a2.js"></script> -->
-    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8af0faf7a2.js"></script>
+    <!-- <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,11 +29,14 @@ License at https://qsconference.com/license.html
     <!-- Animate.js -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS 
+    <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  -->
+ 
     <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Hover.css -->
+    <link href="lib/hover/hover-min.css">
 
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -50,8 +53,15 @@ License at https://qsconference.com/license.html
       <div class="landing-items">
         <img src="img/qsc_logo_tc.png" class="center" alt="QSC logo">    
         <h1>Queen's Space Conference 2020</h1>
-      </div>
+        <br />
+        <iframe class="countdown-iframe" src="https://free.timeanddate.com/countdown/i74rlw2o/n1183/cf12/cm0/cu5/ct4/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs200/szw576/szh243/iso2020-01-31T17:00:00/pd2" allowTransparency="true" frameborder="0" width="514" height="88"></iframe>
 
+      </div>
+      <div class="dates text-center">
+        <h2>QSC 2020: Tour the Universe</h2>
+        <h3>January 31st - February 2nd, 2020</h3>
+      </div>
+    
       <!-- Arrow down -->
       <div class="arrow align-bottom">
         <i class="fa fa-angle-down fa-5x hvr-grow"></i>
@@ -93,21 +103,35 @@ License at https://qsconference.com/license.html
     <!------ Sponsors ------> 
     <section id="sponsors">
       <div class="container-fluid">
-        <h1 class="title">Sponsors</h1>
+        <h1 class="title">Our Sponsors</h1>
       </div>
 
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col">
-            <img src="img/sponsors2020/td_rsz.png" alt="TD Securities Logo">
+          <div class="col-md-auto d-flex align-items-center images-inter">
+            <a href = "https://www.tdsecurities.com">
+              <img src="img/sponsors2020/td_securities.svg" alt="TD Securities Logo" style="max-width:550px">
+            </a>
+          </div>
+          <div class="col-md-auto d-flex align-items-center images-inter">
+            <a href = "https://www.ghgsat.com/">
+              <img src="img/sponsors2020/ghgsat.png" alt="GHGSat Inc" style="max-width:400px;">
+            </a>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col">
-            <img src="img/sponsors2020/hatch.png" alt="Hatch Ltd Logo">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-4 d-flex justify-content-center images-extrat">
+            <a href = "https://orbitalresearch.net/">
+              <img src="img/sponsors2020/Orbital-Logo-RGB.svg" alt="Orbital Research Logo" style="max-width:300;">
+            </a>
           </div>
-          <div class="col justify-content-center">
-            <img src="img/sponsors2020/orbital_research.png" alt="Orbital Research Logo">
+        </div>
+        <div class="row d-flex justify-content-center images-planet">
+          <div class="col-md-3">
+            <a href = "https://steamwhistle.ca/">
+              <div class = "col-xs-12 frameY hvr-grow"><img class = "img-responsive vertical-center" src = "img/sponsors2020/steamwhistle.svg" style="max-width: 250px;">
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -245,10 +269,10 @@ License at https://qsconference.com/license.html
           <div class="col-lg-4 text">
             <h1>Where</h1>
             <div class="row">
-              <div class="col">
+              <div class="col-auto">
                 <img src="img/four-points.svg" alt="Four Points By Sheraton Logo" height="90" width="120">
               </div>
-              <div class="col">
+              <div class="col-auto">
                 <p>Four Points By Sheraton,<br>
                 285 King St E, <br>
                 Kingston Ontario</p>
@@ -256,7 +280,7 @@ License at https://qsconference.com/license.html
             </div>
             <h1>& When</h1>
             <p>January 31st - February 2nd</p>
-            <p>See the schedule -></p>
+            <button type="button" class="btn btn-dark">See our schedule --></button>
           </div>
         </div>
       </div>
