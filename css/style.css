@@ -106,7 +106,7 @@ get started button hover
 
 #landing .landing-items {
 
-  position: absolute;
+  position: static;
   bottom: 0;
   top: 0;
   left: 0;
@@ -172,7 +172,7 @@ get started button hover
   padding: 10px 10px 10px 10px
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   #landing h1 {
     font-size: 50px;
   }
@@ -181,7 +181,7 @@ get started button hover
 /* need to do more countdown importing from the old site */
 
 #landing .countdown {
-  position: relative;
+  position: static;
   bottom : 0px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
