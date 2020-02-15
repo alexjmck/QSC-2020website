@@ -25,11 +25,17 @@ License: https://qsconference.com/license.html
 
 /* -------- Header - Menu -------- */
 
-#header {
-  padding: 30px 0 ;
-  height: 80px;
-  position: fixed;
+#menu {
+  padding: 0 0 ;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
 
+}
+#menu h5 {
+  font-family: 'quicksand', sans-serif;
+  font-size: 25px;
 }
 
 /* -------- Landing -------- */
@@ -112,6 +118,7 @@ get started button hover
   left: 0;
   right: 0;
   display: flex;
+  padding-top: 10%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -189,7 +196,7 @@ get started button hover
 }
 
 #landing .countdown-iframe {
-
+  display: block;
 }
 
 @media (max-width: 575px) {
