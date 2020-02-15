@@ -305,6 +305,27 @@ get started button hover
   text-align: center;
 }
 
+#sponsors .sponsor-info {
+  text-align: center;
+  color: #fff;
+}
+
+#sponsors .sponsor-info h2 {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#sponsors h2 {
+  padding-top: 30px;
+}
+
+#sponsors p {
+  text-align: left;
+  color: #fff;
+}
+
+
 /* -------- Map -------- */
 
 #maps {
@@ -394,6 +415,20 @@ get started button hover
   color: #fff;
   margin: 20px 0;
 }
+
+/* -------- Team -------- */
+#team {
+  background: #000;
+  text-align: center;
+
+}
+
+#team .name {
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+}
+
 
 /* -------- Footer -------- */
 
