@@ -74,7 +74,7 @@ License at https://qsconference.com/license.html
         <!-- Arrow down -->
         <div class="row align-items-end">
           <div class="arrow align-bottom hvr-grow">
-            <a class = "XX" href = "#menu">
+            <a class = "XX" href = "#nav">
               <i class="fa fa-angle-down fa-5x hvr-grow"></i>
             </a>
           </div>
@@ -96,28 +96,30 @@ License at https://qsconference.com/license.html
     <!------ Header - Menu ------>
 
     <!-- come back to this maybe with an opensource menu -->
-    <section id="menu">
-      <nav class="navbar align-items-center navbar-expand-lg navbar-dark" style="background-color: #101522;">
-        <a class="navbar-brand extend-brand XX" href="#landing">QSC: 2020</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <span class="navbar-text mr-auto">
-            Tour the Universe  🚀
-          </span>
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link XX" href="#sponsors">Sponsorship</a>
-            <a class="nav-item nav-link XX" href="#speakers">Speakers</a>
-            <a class="nav-item nav-link XX" href="#tickets">Tickets</a>
-            <a class="nav-item nav-link XX" href="#wfive">Where &amp; When</a>
-            <a class="nav-item nav-link XX" href="#team">Team</a>
-          </div>
-        </div>
 
-      </nav>
-    </section>
+    <!-- This fake section is just to allow scrolling from the lander arrow -->
+    <section id="nav"></section>  
+
+    <nav class="navbar align-items-center navbar-expand-lg navbar-dark" style="background-color: #101522;">
+      <a class="navbar-brand extend-brand XX" href="#landing">QSC: 2020</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <span class="navbar-text mr-auto">
+          Tour the Universe  🚀
+        </span>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link XX" href="#sponsors">Sponsorship</a>
+          <a class="nav-item nav-link XX" href="#speakers">Speakers</a>
+          <a class="nav-item nav-link XX" href="#tickets">Tickets</a>
+          <a class="nav-item nav-link XX" href="#wfive">Where &amp; When</a>
+          <a class="nav-item nav-link XX" href="#team">Team</a>
+        </div>
+      </div>
+    </nav>
+
 
     <!------ About Section ------->
     <section id="about">
@@ -210,7 +212,24 @@ License at https://qsconference.com/license.html
           </form>
         </div>
       </div>
+    </section>
 
+    <!------ Speakers ------>
+    <section id="speakers">
+      <div class="container">
+        <div class="row justify-content-center">  
+          <div class="col-auto">
+            <h1>Speakers</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Keynote Speaker -->
+          <div class="col-md-7">
+            <h3>Keynote Speaker</h3>
+            <h3 class="name">Name!</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!------ Maps ------>
@@ -616,13 +635,40 @@ License at https://qsconference.com/license.html
     <!-- jQuery -->
       <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- jQuery local version -->
-    <script src="lib/jquery/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery/jquery.min.js"><\/script>')</script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <!-- popper.js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- bootstrap  -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Site js files -->
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <!-- JQuery function for navbar-fixed-top and fix navigation top of page jump -->
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function () {
+            //if you hard code, then use console
+            //.log to determine when you want the
+            var d = $('.landing-container');
+          if ($(window).scrollTop() > d.prop("scrollHeight") ) {
+
+            $('.navbar').addClass('navbar-fixed-top');
+            $('body').css('margin-top','60px');
+
+          }
+          if ($(window).scrollTop() < d.prop("scrollHeight")) {
+            $('.navbar').removeClass('navbar-fixed-top');
+            $('body').css('margin-top','0px');
+          }
+        });
+      });
+    </script>
 
     <!--Smooth Scroll Script-->
     <script>

@@ -25,25 +25,35 @@ License: https://qsconference.com/license.html
 
 /* -------- Body overload -------- */
 
-body h1 {
+/*body h1 {
   z-index: 1;
   color: #fff;
   font-size: 35px;
   font-family: 'Oxygen', sans-serif;
-}
+}*/
 
 /* -------- Header - Menu -------- */
 
-#menu {
+.navbar {
   /*height: 70px;*/
-  top: 0;
+  /*top: 0;*/
   z-index: 999;
 
 }
 
-#menu .extend-brand {
+.navbar .extend-brand {
   font-family: 'quicksand', sans-serif;
   font-size: 23px;
+}
+
+.navbar-fixed-top {
+  width:100%;
+  background-color: linen;
+  background: rgba(0, 0, 0, 0.99);
+  top: 0;
+  position: fixed;
+  width: 100%;
+
 }
 
 /* -------- Landing -------- */
@@ -334,6 +344,35 @@ get started button hover
   color: #fff;
 }
 
+/* -------- Speakers -------- */
+
+#speakers {
+  padding: 40px 0 40px 0;
+}
+
+#speakers h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#speakers h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#speakers .name {
+  
+}
+
+#speakers img {
+
+}
+
+#speakers p {
+
+}
 
 /* -------- Map -------- */
 
