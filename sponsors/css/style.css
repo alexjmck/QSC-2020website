@@ -240,19 +240,35 @@ get started button hover
   font-family: 'Megrim', sans-serif;
   color: #fff;
 }
+
 #landing .sponsors-images-inter {
   padding: 40px 50px 40px 50px;
   text-align: center;
 }
 
+@media (max-width:575px) {
+  #landing .sponsors-images-inter {
+    max-width: 70%;
+  }
+
 #landing .sponsors-images-extrat {
   padding: 30px 20px 20px 20px;
   text-align: center;
-  width: 400px;
+  max-width: 400px;
 }
+
+@media (max-width:575px) {
+  #landing .sponsors-images-extrat {
+    max-width: 50%;
+  }
 
 #landing .sponsors-images-planet {
   padding: 40px 30px 30px 30px;
   text-align: center;
 }
+
+@media (max-width:575px) {
+  #landing .sponsors-images-planet {
+    max-width: 30%;
+  }
 
