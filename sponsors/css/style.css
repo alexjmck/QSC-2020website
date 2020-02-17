@@ -244,31 +244,50 @@ get started button hover
 #landing .sponsors-images-inter {
   padding: 40px 50px 40px 50px;
   text-align: center;
+  max-width:550px;
 }
 
 @media (max-width:575px) {
   #landing .sponsors-images-inter {
-    max-width: 70%;
+    width: 100%;
+    max-width:550px;
+    text-align: center;
   }
 
 #landing .sponsors-images-extrat {
-  padding: 30px 20px 20px 20px;
+  padding: 30px 30px 30px 30px;
   text-align: center;
-  max-width: 400px;
 }
 
 @media (max-width:575px) {
   #landing .sponsors-images-extrat {
-    max-width: 50%;
+    max-width: 90%;
+    text-align: center;
   }
 
 #landing .sponsors-images-planet {
-  padding: 40px 30px 30px 30px;
+  padding: 20px 30px 20px 30px;
   text-align: center;
+  max-width: 430px;
 }
 
 @media (max-width:575px) {
   #landing .sponsors-images-planet {
-    max-width: 30%;
+    width: 75%;
+    max-width: 350px;
+    text-align: center;
   }
+#landing .sponsors-images-merch {
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  max-width: 250px;
+}
+
+@media (max-width: 576px) {
+  #landing .sponsors-images-merch {
+    width: 60%;
+    max-width: 250px;
+    text-align: center;
+  }
+}  
 
