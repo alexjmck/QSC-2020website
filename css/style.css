@@ -186,26 +186,28 @@ get started button hover
   color: #fff;
 }
 
-#landing .landing-items img {
-  max-width: 30%;
+#landing .landing-logo {
+  max-width: 600px;
   display: block; 
   margin: 0 auto;
   height: auto;
+
+  display: block; 
+  margin: 0 auto;
 }
-  
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
-    #landing .landing-items img {
-      width: 30px;
-      height: 30px;
-    }
-}}
 
 @media (max-width: 768px) {
-  #landing .landing-items img {
-    max-width: 50%;
-    height: auto;
+  #landing .landing-logo {
+    width: 80%;
+    max-width: 600px;
   }
+}
+
+#landing .landing-items img {
+  max-width: 80%;
+  display: block; 
+  margin: 0 auto;
+  height: auto;
 }
 
 #landing h1 {
