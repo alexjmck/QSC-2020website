@@ -32,10 +32,14 @@ License: https://qsconference.com/license.html
 
 /*body h1 {
   z-index: 1;
-  color: #fff;
+  color: #f6f4f3;
   font-size: 35px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'quicksand', sans-serif;
 }*/
+
+body {
+  font-family: 'quicksand', sans-serif;
+}
 
 /* -------- Header - Menu -------- */
 
@@ -87,6 +91,19 @@ get started button hover
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
+  min-height: 747px;
+}
+
+@media (max-width: 768px) {
+  #landing {
+    min-height: 700px
+  }
+}
+
+@media (max-width: 575px) {
+  #landing {
+    min-height: 550px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -125,7 +142,7 @@ get started button hover
 
 #landing p .social a {
   margin: 0 10px 0 0;
-  color: #fff;
+  color: #f6f4f3;
   display: inline-block;
   width: 26px;
   height: 26px;
@@ -155,7 +172,6 @@ get started button hover
 }
 
 #landing .arrow {
-  color: rgba(255, 255, 255, 0.8);
   width: 50%;
   position: absolute;
   bottom: 0px;
@@ -171,8 +187,12 @@ get started button hover
   z-index: 999;
 }
 
+#landing .arrow-fa {
+  /*color: rgba(199, 36, 35, 0.8);*/
+}
+
 #landing btn-get-started {
-  font-family: "Oxygen", sans-serif;
+  font-family: "quicksand", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -182,8 +202,8 @@ get started button hover
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #f6f4f3;
+  color: #f6f4f3;
 }
 
 #landing .landing-logo {
@@ -212,7 +232,7 @@ get started button hover
 
 #landing h1 {
 	z-index: 1;
-	color: #fff;
+	color: #f6f4f3;
 	font-size: 65px;
   text-align: center;
   font-family: 'Megrim', cursive;
@@ -225,13 +245,19 @@ get started button hover
   }
 }
 
+@media (max-width: 575px) {
+  #landing h1 {
+    font-size: 35px;
+  }
+}
+
 /* need to do more countdown importing from the old site */
 
 #landing .countdown {
   position: static;
   bottom : 0px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(246, 244, 243, 1);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
 }
 
@@ -253,12 +279,14 @@ get started button hover
   font-family: 'quicksand', sans-serif;
   font-weight: 300;
   position: absolute;
-  color: white;
+  color: #f6f4f3;
   bottom: 45px;
   left:0;
   right:0;
   margin: 0 auto;
   margin-bottom: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #landing .dates h2 {
@@ -269,11 +297,11 @@ get started button hover
 }
 @media (max-width:575px) {
   #landing .dates h2 {
-    font-size:30px;
+    font-size: 25px;
   }
 
   #landing .dates h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -285,7 +313,7 @@ get started button hover
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
+  color: #f6f4f3;
   padding: 30px 0 40px 0;
 }
 
@@ -301,35 +329,106 @@ get started button hover
 
 #about .title {
   text-align: center;
-  color: #fff;
+  color: #f6f4f3;
 }
 
 #about h1 {
   z-index: 1;
-  color: #fff;
+  color: #f6f4f3;
   font-size: 35px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'quicksand', sans-serif;
 }
 
 #about h2 {
   z-index: 1;
-  color: #fff;
+  color: #f6f4f3;
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'quicksand', sans-serif;
+}
+
+/* -------- Speakers -------- */
+
+#speakers {
+  padding: 40px 0 40px 0;
+  background-color: #101522;
+  color: #f6f4f3;
+}
+
+#speakers h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'quicksand', sans-serif;
+}
+
+#speakers h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'quicksand', sans-serif;
+}
+
+#speakers .name {
+  padding-top: 10px;
+
+}
+
+#speakers .position {
+  font-size: 23px;
+  font-family: 'quicksand', sans-serif;
+
+}
+
+#speakers .topic {
+  font-size: 23px;
+  font-family: 'quicksand', sans-serif;
+}
+
+#speakers .bio {
+  font-family: 'quicksand', sans-serif;
+  text-align: : left;
+}
+
+#speakers .keynote {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#speakers img {
+  max-width: 200px;
+
+}
+
+#speakers p {
+  padding-top: 10px;
 }
 
 /* -------- Sponsors -------- */
 
 #sponsors {
-  background-color: #101522;
+  background: url("../img/spacebg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #f6f4f3;
   padding: 40px 0 40px 0;
+}
+
+#sponsors:before {
+  content: "";
+  background: rgba(1,1,1,0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 #sponsors .title {
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
-  color: #fff;
+  font-family: 'quicksand', sans-serif;
+  color: #f6f4f3;
+  z-index: 99;
 }
+
 #sponsors .images-inter {
   padding: 40px 50px 40px 50px;
   text-align: center;
@@ -384,60 +483,63 @@ get started button hover
   }
 }
 
-#sponsors .sponsor-info {
+/* Interested in sponsoring? section */
+
+#sponsors-info {
+  background: #101522;
   text-align: center;
-  color: #fff;
+  padding: 20px 0 50px 0;
 }
 
-#sponsors .sponsor-info h2 {
-  color: #fff;
+#sponsors-info .title {
+  text-align: center;
+  font-family: 'quicksand', sans-serif;
+  color: #f6f4f3;
+}
+
+#sponsors-info .sponsor-info {
+  text-align: center;
+  color: #f6f4f3;
+}
+
+#sponsors-info .sponsor-info h2 {
+  color: #f6f4f3;
   font-size: 30px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'quicksand', sans-serif;
 }
 
-#sponsors h2 {
+#sponsors-info h2 {
   padding-top: 30px;
 }
 
-#sponsors p {
+#sponsors-info p {
   text-align: left;
-  color: #fff;
+  color: #f6f4f3;
 }
 
-/* -------- Speakers -------- */
-
-#speakers {
-  padding: 40px 0 40px 0;
+#sponsors-info hr {
+  border-top: 1px solid #f6f4f3;
 }
 
-#speakers h1 {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Oxygen', sans-serif;
-}
-
-#speakers h3 {
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Oxygen', sans-serif;
-}
-
-#speakers .name {
-  
-}
-
-#speakers img {
-
-}
-
-#speakers p {
-
+#sponsors-info .button-style {
+  background-color: #29274c;
+  margin-top: 10px;
+  border:none;
+  -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+  -moz-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+  width: 350px;
+  z-index: 99;
 }
 
 /* -------- Map -------- */
 
 #maps {
   height: 350px;
+}
+
+#maps .title {
+  font-family: 'quicksand', sans-serif;
+  color: #f6f4f3;
 }
 
 /* -------- Tickets -------- */
@@ -467,7 +569,7 @@ get started button hover
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #fff;
+  color: #f6f4f3;
 }
 
 #tickets .card {
@@ -482,31 +584,111 @@ get started button hover
 
 #tickets .card hr {
   margin: 25px 0;
-  color: #fff;
+  color: #f6f4f3;
   height: 1px;
-  background-color: #fff;
+  background-color: #f6f4f3;
   border: none;
 }
 
 #tickets .ticket-title {
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
-  color: #fff;
+  font-family: 'quicksand', sans-serif;
+  color: #f6f4f3;
 }
 
 #tickets .ticket-price {
   font-size: 48px;
-  color: #fff;
+  color: #f6f4f3;
 }
 
 #tickets .tickets-features {
-  color: #fff;
+  color: #f6f4f3;
   text-align: left;
 
 }
 
 #tickets .tickets-buy {
   margin: 50px 0 0 0;
+}
+
+/* -------- Team -------- */
+#team {
+  background: #101522;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+#team h1 {
+  z-index: 1;
+  color: #f6f4f3;
+  font-size: 35px;
+  font-family: 'quicksand', sans-serif;
+  padding-bottom: 20px;
+}
+
+#team h2 {
+  color: #f6f4f3;
+  font-family: 'quicksand', sans-serif;
+  font-size: 30px;
+}
+
+#team .subteam {
+  padding: 20px 0 15px 0;
+}
+
+#team .name {
+  font-size: 25px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+}
+
+@media (max-width: 768px) {
+  #team .name {
+  font-size: 16px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+  }
+}
+
+#team .title {
+  font-size: 20px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+}
+
+@media (max-width: 768px) {
+  #team .title {
+  font-size: 14px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+  }
+}
+
+#team .links{
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+#team .links i.fa-envelope{
+  color: #cd4378;
+}
+
+#team img {
+  /*border-radius: 1%;*/
+  max-height: 200px;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  #team img {
+  /*border-radius: 2%;*/
+  max-height: 200px;
+  width: 100%;
+  max-width: 200px;
+  }
 }
 
 /* -------- Where and when -------- */
@@ -520,88 +702,8 @@ get started button hover
 }
 
 #wfive .text {
-  color: #fff;
+  color: #f6f4f3;
   margin: 20px 0;
-}
-
-/* -------- Team -------- */
-#team {
-  background: #101522;
-  text-align: center;
-  padding: 30px 0 20px 0;
-}
-
-#team h1 {
-  z-index: 1;
-  color: #fff;
-  font-size: 35px;
-  font-family: 'Oxygen', sans-serif;
-  padding-bottom: 20px;
-}
-
-#team h2 {
-  color: #fff;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 30px;
-}
-
-#team .subteam {
-  padding: 20px 0 15px 0;
-}
-
-#team .name {
-  font-size: 25px;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  #team .name {
-  font-size: 16px;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  color: #fff;
-  }
-}
-
-#team .title {
-  font-size: 20px;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  #team .title {
-  font-size: 14px;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-  color: #fff;
-  }
-}
-
-#team .links{
-  margin-top: 0px;
-  padding-bottom: 10px;
-}
-#team .links i.fa-envelope{
-  color: #cd4378;
-}
-
-#team img {
-  border-radius: 10%;
-  max-height: 200px;
-  max-width: 200px;
-}
-
-@media (max-width: 768px) {
-  #team img {
-  border-radius: 10%;
-  max-height: 200px;
-  width: 100%;
-  max-width: 200px;
-  }
 }
 
 /* -------- Footer -------- */
