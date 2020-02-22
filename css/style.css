@@ -185,6 +185,7 @@ get started button hover
   text-align: center;
   flex-direction: column;
   z-index: 999;
+  color: #007bff;
 }
 
 #landing .arrow-fa {
@@ -330,6 +331,46 @@ get started button hover
 #about .title {
   text-align: center;
   color: #f6f4f3;
+}
+
+#about .social {
+  margin: 0 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  vertical-align: bottom;
+}
+
+#about p.social a i {
+  vertical-align: bottom;
+  line-height: 26px;
+}
+
+#about p.social a .facebook {
+  background-color: #4460ae;
+}
+
+#about p.social a .twitter {
+  background-color: #3cf;
+}
+
+#about p.social a .instagram {
+  background-color: #cd4378;
+}
+
+@media (max-width: 991px) {
+  #about
+   p.social {
+    text-align: center;
+  }
 }
 
 #about h1 {
@@ -637,22 +678,6 @@ get started button hover
 }
 
 #team .name {
-  font-size: 25px;
-  font-family: 'quicksand', sans-serif;
-  text-align: center;
-  color: #f6f4f3;
-}
-
-@media (max-width: 768px) {
-  #team .name {
-  font-size: 16px;
-  font-family: 'quicksand', sans-serif;
-  text-align: center;
-  color: #f6f4f3;
-  }
-}
-
-#team .title {
   font-size: 20px;
   font-family: 'quicksand', sans-serif;
   text-align: center;
@@ -660,8 +685,24 @@ get started button hover
 }
 
 @media (max-width: 768px) {
+  #team .name {
+  font-size: 19px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+  }
+}
+
+#team .title {
+  font-size: 16px;
+  font-family: 'quicksand', sans-serif;
+  text-align: center;
+  color: #f6f4f3;
+}
+
+@media (max-width: 768px) {
   #team .title {
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'quicksand', sans-serif;
   text-align: center;
   color: #f6f4f3;
@@ -671,23 +712,25 @@ get started button hover
 #team .links{
   margin-top: 0px;
   padding-bottom: 10px;
+  font-size: 14px;
 }
+
 #team .links i.fa-envelope{
-  color: #cd4378;
+  color: #007bff;
 }
 
 #team img {
   /*border-radius: 1%;*/
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 175px;
+  max-width: 175px;
 }
 
 @media (max-width: 768px) {
   #team img {
   /*border-radius: 2%;*/
-  max-height: 200px;
+  max-height: 175px;
   width: 100%;
-  max-width: 200px;
+  max-width: 175px;
   }
 }
 
