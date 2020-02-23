@@ -41,6 +41,24 @@ body {
   font-family: 'quicksand', sans-serif;
 }
 
+/* -------- Hover css -------- */
+/*.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}*/
+
 /* -------- Header - Menu -------- */
 
 .navbar {
@@ -409,18 +427,18 @@ get started button hover
 
 #speakers .name {
   padding-top: 10px;
-
 }
 
 #speakers .position {
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'quicksand', sans-serif;
 
 }
 
 #speakers .topic {
-  font-size: 23px;
+  font-size: 18px;
   font-family: 'quicksand', sans-serif;
+  padding-bottom: 10px;
 }
 
 #speakers .bio {
@@ -433,13 +451,19 @@ get started button hover
   padding-top: 15px;
 }
 
+#speakers .speaker {
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+
 #speakers img {
   max-width: 200px;
-
+  border-radius: 50%;
 }
 
 #speakers p {
-  padding-top: 10px;
+  text-align: left;
+  font-size: 14px;
 }
 
 /* -------- Sponsors -------- */
@@ -741,7 +765,7 @@ get started button hover
 }
 
 #wfive .map {
-  height: 350px;
+  height: 330px;
 }
 
 #wfive .text {

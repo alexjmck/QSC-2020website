@@ -36,7 +36,7 @@ License at https://qsconference.com/license.html
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Hover.css -->
-    <link href="lib/hover/hover-min.css">
+    <link href="lib/hover/hover-min.css" rel="stylesheet">
 
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -100,22 +100,24 @@ License at https://qsconference.com/license.html
     <!-- come back to this maybe with an opensource menu -->
 
     <nav class="navbar align-items-center navbar-expand-lg navbar-dark">
-      <a class="navbar-brand extend-brand XX" href="#landing">QSC: 2020</a>
+      <div class="navbar-header">
+        <a class="navbar-brand extend-brand XX" href="#landing">QSC: 2020</a>
+      </div>
+      <span class="navbar-text mr-auto">
+          Tour the Universe  🚀
+      </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <span class="navbar-text mr-auto">
-          Tour the Universe  🚀
-        </span>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active XX" href="#about">About<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link XX" href="#sponsors">Sponsorship</a>
-          <a class="nav-item nav-link XX" href="#speakers">Speakers</a>
-          <a class="nav-item nav-link XX" href="#tickets">Tickets</a>
-          <a class="nav-item nav-link XX" href="#wfive">Where &amp; When</a>
+        <div class="nav navbar-nav ml-auto" id="linkList">
+          <a class="nav-item nav-link XX" href="#about" data-toggle="collapse" data-target="#navbarNavAltMarkup">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link XX" href="#speakers" data-toggle="collapse" data-target="#navbarNavAltMarkup">Speakers</a>
+          <a class="nav-item nav-link XX" href="#sponsors" data-toggle="collapse" data-target="#navbarNavAltMarkup">Sponsorship</a>
+          <a class="nav-item nav-link XX" href="#tickets" data-toggle="collapse" data-target="#navbarNavAltMarkup">Tickets</a>
           <a class="nav-item nav-link XX" href="resources/QSC2020schedule.pdf">Schedule</a>
-          <a class="nav-item nav-link XX" href="#team">Team</a>
+          <a class="nav-item nav-link XX" href="#team" data-toggle="collapse" data-target="#navbarNavAltMarkup">Team</a>
+          <a class="nav-item nav-link XX" href="#wfive" data-toggle="collapse" data-target="#navbarNavAltMarkup">Where &amp; When</a>
           <a class="nav-item nav-link" href="icebreaker/icebreaker.html">Space Game</a>
         </div>
       </div>
@@ -163,6 +165,62 @@ License at https://qsconference.com/license.html
             <p class="bio">"Ewan Reid is the President & CEO of Mission Control, a Canadian Space Exploration and Robotics company with a focus on mission operations, onboard autonomy and artificial intelligence. Prior to founding Mission Control Ewan was a subsystem design lead on three rover prototypes for the CSA. He was also a mission controller for ten of the last 12 Space Shuttle missions at Mission Control at NASA JSC. Ewan has degrees in Electrical Engineering and Economics from Queen’s University, a Master’s degree in Technology Innovation Management at Carleton University and is an alumnus and visiting lecturer at the International Space University."</p>
           </div>
         </div>
+        <!-- Speakers two per row -->
+        <div class="row justify-content-center">
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/laurie_metcalfe.png">
+            <h3 class="name">Laurie Metcalfe</h3>
+            <div class="position">Intermediate Engineer, Exploration Planning</div>
+            <div class="position">Canadian Space Agency</div>
+            <div class="topic"><strong>Topic:</strong> Building a gateway to the universe</div>
+            <p class="bio">Originally from Hudson Quebec, Laurie Metcalfe graduated from Queen’s University in 1997 with a degree in Mechanical Engineering. Laurie started her career in space with MDA as a test Engineer working on the test and integration of the arm joints for the Special Purpose Dextrous Manipulator (SPDM). After 2 years of testing and integration, Laurie joined the MSS Operations analysis group in St. Hubert where she continued working on SPDM as the lead analyst for flight STS-123 which launched SPDM to the ISS in 2008.</p>
+            <p class="bio">Laurie was the lead SPDM analyst until 2011, when she joined the Canadian Space Agency. She continued as a member of the Mobile Servicing System (MSS) Operations Engineering team providing support to planning, analysis, real time operations and training for MSS Operations for the next six years in various roles. For the last 2 years Laurie has been working on the development of Canadarm3, which will form Canada’s contribution the Gateway, which is the next step in the human exploration of space.</p>
+          </div>
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/perry_edmundson.png">
+            <h3 class="name">Perry Edmundson</h3>
+            <div class="position">Program Manager</div>
+            <div class="position">Canadensys Aerospace Corporation</div>
+<!--             <div class="topic"><strong>Topic:</strong> The coolest stuff in the world</div> -->
+            <p class="bio">"Perry is a life-long space enthusiast and avid supporter of manned and robotic space exploration. He has over 23 years of experience in the Canadian space industry working on commercial and government space projects in various technical and management roles. He obtained a Bachelor’s degree in Aerospace Engineering from Carleton University in Ottawa, Ontario, Canada in 1996 followed by a Master’s degree in Astronautical Engineering from the Viterbi School of Engineering at the University of Southern California in Los Angeles, California, USA in 2011 and is a licensed Professional Engineer. He is also an alumnus of the International Space University’s Space Studies Program (2005). In his current role as Program Manager at Canadensys Aerospace Corporation, Perry manages government and commercial space projects and proposals."</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/pamela_woo.png">
+            <h3 class="name">Pamela Woo</h3>
+            <div class="position">Guidance, Navigation and Control (GNC) Engineer</div>
+            <div class="position">NGC Aerospace</div>
+            <div class="topic"><strong>Topic:</strong> Autonomy and Making Mobile Vehicles Intelligent</div>
+            <p class="bio">Pamela Woo is a Guidance, Navigation and Control (GNC) Engineer at NGC Aerospace. Her expertise is in the development of Attitude and Orbit Control System (AOCS) software for satellites. She is currently working on the spacecraft GNC software for the ESA PROBA-3 formation flight mission.</p>
+          </div>
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/tim_haltigin.png">
+            <h3 class="name">Tim Haltigin</h3>
+            <div class="position">Planetary Senior Mission Scientist</div>
+            <div class="position">Canadian Space Agency</div>
+            <!-- <div class="topic"><strong>Topic:</strong> Autonomy and Making Mobile Vehicles Intelligent</div> -->
+            <p class="bio">Tim Haltigin is the Planetary Senior Mission Scientist at the Canadian Space Agency. In this role, he helps lead Canada’s efforts in finding new ways to explore planetary bodies throughout the solar system. He received his PhD from McGill University, where his research revealed similarities in the evolution of ice-rich terrains on Earth and Mars. In 2016 he was in the running to become Canada’s next astronaut, and in 2017 he had an asteroid named after him (130066 timhaltigin). Tim currently serves as the Canadian mission manager for OSIRIS-REx, a mission that will return a sample from asteroid Bennu to Earth in 2023.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/rami_kendala.png">
+            <h3 class="name">Rami Kendala</h3>
+            <div class="position">Spacecraft Electrical Engineer </div>
+            <div class="position">Space Flight Laboratory</div>
+            <div class="topic"><strong>Topic:</strong> Space Flight Laboratory: Microsatellites from Concept to Operations</div>
+            <p class="bio">"I am a spacecraft electrical engineer working at the Space Flight Laboratory (SFL). I work on the hardware of micro/nanosatellites. My interests in space started back in undergrad when I joined Space Concordia and worked on a student-built 3U cubesat with a payload for testing self-healing composite materials in space. This project made me realize my passion for space and the engineering challenges presented by its harsh environment. My typical day at work is spent designing hardware and rigorously testing it so that it performs well in the harsh space environment. I have a BEng in Electrical Engineering from Concordia University and recently completed my MASc in Aerospace Science and Engineering at the University of Toronto Institute for Aerospace Studies (UTIAS)."</p>
+          </div>
+          <div class="col-sm-6 speaker">
+            <img src="img/speakers2020/placeholder.png">
+            <h3 class="name">Bryce Dudley</h3>
+            <div class="position">Vision Systems Engineer</div>
+            <div class="position">MDA's Vision Systems and Sensors</div>
+            <!-- <div class="topic"><strong>Topic:</strong> MDA's vision systems</div> -->
+            <p class="bio">"Bryce Dudley is a vision systems engineer in MDA's Vision Systems and Sensors group (formerly Neptec Design Group). His work currently supports stereo vision systems on the ESA's Rosalind Franklin rover, and the use of LiDAR systems to enable autonomous rendezvous and berthing operations at the ISS. He holds a degree in Mechatronic Systems Engineering from the University of Western Ontario, where he is currently a Masters student in Electrical & Computer Engineering, exploring the application of machine learning to 3D point clouds. Bryce also holds a degree in Political Science from the University of Calgary, the city where he grew up. Bryce now lives in Ottawa with his wife Dominique and their dog, Lily."</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -178,26 +236,26 @@ License at https://qsconference.com/license.html
         <div class="row justify-content-center">
           <div class="col-lg-6 d-flex align-items-center justify-content-center" style="text-align: center;">
             <a href = "https://www.tdsecurities.com">
-              <img class="images-inter" src="img/sponsors2020/td_securities.svg" alt="TD Securities Logo">
+              <img class="images-inter hvr-grow" src="img/sponsors2020/td_securities.svg" alt="TD Securities Logo">
             </a>
           </div>
           <div class="col-lg-6 d-flex align-items-center justify-content-center" style="text-align: center;">
             <a href = "https://www.ghgsat.com/">
-              <img class="images-inter" src="img/sponsors2020/ghgsat.png" alt="GHGSat Inc">
+              <img class="images-inter hvr-grow" src="img/sponsors2020/ghgsat.png" alt="GHGSat Inc">
             </a>
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-auto d-flex justify-content-center" style="text-align: center;">
             <a href = "https://orbitalresearch.net/">
-              <img class="images-planet" src="img/sponsors2020/Orbital-Logo-RGB.svg" alt="Orbital Research Logo" >
+              <img class="images-planet hvr-grow" src="img/sponsors2020/Orbital-Logo-RGB.svg" alt="Orbital Research Logo" >
             </a>
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-3 justify-content-center" style="text-align: center;">
             <a href = "https://steamwhistle.ca/">
-              <img class = "images-merch img-responsive vertical-center" src = "img/sponsors2020/steamwhistle.svg">
+              <img class = "images-merch img-responsive vertical-center hvr-grow" src = "img/sponsors2020/steamwhistle.svg">
             </a>
           </div>
         </div>
@@ -230,7 +288,7 @@ License at https://qsconference.com/license.html
         <!-- Sponsorship package button -->
         <div class="row justify-content-center">
           <form method="get" action="resources/QSC-Sponsorship-Package2020.pdf">
-            <button class = "spons-down btn btn-primary button-style">
+            <button class = "hvr-grow spons-down btn btn-primary button-style">
               <span>
                 <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
                 <p style = "display:inline; text-align: center; font-size: 20px;">2020 - Sponsorship Package</p>
@@ -378,8 +436,8 @@ License at https://qsconference.com/license.html
             <div class="name">Monique Rivard</div>
             <div class="title">Co-Chair</div>
             <div class = "links">
-              <a href = "mailto:m.rivard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-              <a href = "https://www.linkedin.com/in/moniquerivard/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:m.rivard@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/moniquerivard/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Harris -->
@@ -388,8 +446,8 @@ License at https://qsconference.com/license.html
             <div class="name">Harris Cornett</div>
             <div class="title">Co-Chair</div>
             <div class = "links">
-              <a href = "mailto:h.cornett@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-              <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:h.cornett@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
         </div>
@@ -406,8 +464,8 @@ License at https://qsconference.com/license.html
             <div class="name">Curtis Canty</div>
             <div class="title">Speakers Director</div>
             <div class = "links">
-              <a href = "mailto:c.canty@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
-              <a href = "https://www.linkedin.com/in/curtis-canty-1447609b" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:c.canty@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
+              <a href = "https://www.linkedin.com/in/curtis-canty-1447609b" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Adam -->
@@ -416,7 +474,7 @@ License at https://qsconference.com/license.html
             <div class="name">Adam Grace</div>
             <div class="title">Speakers Coordinator</div>
             <div class = "links">
-              <a href = "mailto:a.grace@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
+              <a href = "mailto:a.grace@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
             </div>
           </div>
           <!-- Isabelle -->
@@ -425,7 +483,7 @@ License at https://qsconference.com/license.html
             <div class="name">Isabelle Thierrin</div>
             <div class="title">Speakers Coordinator</div>
             <div class = "links">
-              <a href = "mailto:i.thierrin@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
+              <a href = "mailto:i.thierrin@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
             </div>
           </div>
         </div>
@@ -442,8 +500,8 @@ License at https://qsconference.com/license.html
             <div class="name">Anya Jacksteit</div>
             <div class="title">Sponsorship Director</div>
             <div class = "links">
-              <a href = "mailto:a.jacksteit@queensu.ca"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-              <a href = "https://www.linkedin.com/in/anya-jacksteit/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:a.jacksteit@queensu.ca"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/anya-jacksteit/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Justin -->
@@ -452,8 +510,8 @@ License at https://qsconference.com/license.html
             <div class="name">Justin Bonal</div>
             <div class="title">Sponsorship Coordinator</div>
             <div class = "links">
-              <a href = "mailto:j.bonal@queensu.ca"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-              <a href = "https://www.linkedin.com/in/justin-bonal-3ba415176/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:j.bonal@queensu.ca"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/justin-bonal-3ba415176/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Will -->
@@ -462,7 +520,7 @@ License at https://qsconference.com/license.html
             <div class="name">Will Francis</div>
             <div class="title">Sponsorship Coordinator</div>
             <div class = "links">
-              <a href = "mailto:w.francis@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
+              <a href = "mailto:w.francis@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
             </div>
           </div>
         </div>
@@ -473,8 +531,8 @@ License at https://qsconference.com/license.html
             <div class="name">Spencer Lee</div>
             <div class="title">Sponsorship Coordinator</div>
             <div class = "links">
-              <a href = "mailto:s.lee@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
-              <a href = "http://linkedin.com/in/spencer-lee-bb2849162" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:s.lee@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
+              <a href = "http://linkedin.com/in/spencer-lee-bb2849162" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
         </div>
@@ -491,8 +549,8 @@ License at https://qsconference.com/license.html
             <div class="name">Merlyn John</div>
             <div class="title">Publications &amp; Media Coordinator</div>
             <div class = "links">
-              <a href = "mailto:m.john@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
-              <a href = "https://www.linkedin.com/in/merlynjohn/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:m.john@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:0px;"></i></a>
+              <a href = "https://www.linkedin.com/in/merlynjohn/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Alex -->
@@ -501,8 +559,8 @@ License at https://qsconference.com/license.html
             <div class="name">Alex McKinnon</div>
             <div class="title">IT Coordinator &amp; Webmaster</div>
             <div class = "links">
-              <a href = "mailto:a.mckinnon@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-              <a href = "https://www.linkedin.com/in/alex-mckinnon/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:a.mckinnon@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/alex-mckinnon/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Ashkon -->
@@ -511,8 +569,8 @@ License at https://qsconference.com/license.html
             <div class="name">Ashkon Noori</div>
             <div class="title">Marketing Coordinator</div>
             <div class = "links">
-              <a href = "mailto:a.noori@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
-              <a href = "https://www.linkedin.com/in/AshkonNoori39" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:a.noori@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
+              <a href = "https://www.linkedin.com/in/AshkonNoori39" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
         </div>
@@ -529,8 +587,8 @@ License at https://qsconference.com/license.html
             <div class="name">Eden D'Abreo</div>
             <div class="title">Logistics Coordinator</div>
             <div class = "links">
-              <a href = "mailto:e.dabreo@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px"></i></a>
-              <a href = "https://www.linkedin.com/in/eden-dabreo" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:e.dabreo@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = "margin-top:-10px"></i></a>
+              <a href = "https://www.linkedin.com/in/eden-dabreo" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Rachel -->
@@ -539,8 +597,8 @@ License at https://qsconference.com/license.html
             <div class="name">Rachel Rotstein</div>
             <div class="title">Finance Coordinator</div>
             <div class = "links">
-              <a href = "mailto:r.rotstein@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
-              <a href = "https://www.linkedin.com/in/rachel-rotstein/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:r.rotstein@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
+              <a href = "https://www.linkedin.com/in/rachel-rotstein/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Chris -->
@@ -549,7 +607,7 @@ License at https://qsconference.com/license.html
             <div class="name">Chris Viloria</div>
             <div class="title">Events Coordinator</div>
             <div class = "links">
-              <a href = "mailto:c.viloria@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              <a href = "mailto:c.viloria@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
             </div>
           </div>
         </div>
@@ -561,8 +619,8 @@ License at https://qsconference.com/license.html
             <div class="name">Ally Shikaze</div>
             <div class="title">Internal Delegates Coordinator</div>
             <div class = "links">
-              <a href = "mailto:a.shikaze@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
-              <a href = "https://www.linkedin.com/in/ally-shikaze/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:a.shikaze@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
+              <a href = "https://www.linkedin.com/in/ally-shikaze/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Ally E -->
@@ -571,8 +629,8 @@ License at https://qsconference.com/license.html
             <div class="name">Ally Eastmure</div>
             <div class="title">External Delegates Coordinator</div>
             <div class = "links">
-              <a href = "mailto:a.eastmure@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
-              <a href = "https://ca.linkedin.com/in/allyson-eastmure-2bab5517a" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              <a href = "mailto:a.eastmure@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
+              <a href = "https://ca.linkedin.com/in/allyson-eastmure-2bab5517a" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a>
             </div>
           </div>
           <!-- Matt -->
@@ -581,7 +639,7 @@ License at https://qsconference.com/license.html
             <div class="name">Matthew Fazzari</div>
             <div class="title">First Year Representative</div>
             <div class = "links">
-              <a href = "mailto:m.fazzari@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              <a href = "mailto:m.fazzari@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" style = ""></i></a>
             </div>
           </div>
         </div>
@@ -592,11 +650,11 @@ License at https://qsconference.com/license.html
 
     <section id="wfive">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="map">
               <!-- REPLACE THE API KEY AND FIX INTERACTIVITY - happens when the map is at a stupid aspect ratio... -->
-              <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
+              <iframe width="100%" height="330px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
               
             </div>
           </div>
@@ -614,7 +672,7 @@ License at https://qsconference.com/license.html
             </div>
             <h1 class="title">& When</h1>
             <p>January 31st - February 2nd</p>
-            <a href="resources/QSC2020schedule.pdf"><button type="button" class="btn btn-dark">See the schedule</button></a>
+            <a href="resources/QSC2020schedule.pdf"><button type="button" class="btn btn-dark hvr-grow">See the schedule</button></a>
           </div>
         </div>
       </div>
@@ -646,8 +704,8 @@ License at https://qsconference.com/license.html
     <!-- popper.js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- bootstrap  -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Site js files -->
     <script src="js/jquery.cookie.js"></script>
     <script src="js/front.js"></script>
