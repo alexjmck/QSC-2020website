@@ -5,4 +5,4 @@ This project is being built from the ground up using a handful of resources outl
 
 The space gam authored by Cory Crowley will be added in future commits.
 
-See license.html for licensing. This site falls under the 
+See license.html for licensing. This site falls under the GNU GPLv3 License.
