@@ -466,6 +466,14 @@ get started button hover
   font-size: 14px;
 }
 
+#speakers .past-text {
+  text-align: center;
+}
+
+#speakers .past-text p {
+  text-align: center;
+}
+
 /* -------- Sponsors -------- */
 
 #sponsors {
